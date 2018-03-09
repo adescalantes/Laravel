@@ -7,7 +7,7 @@
     <nav>
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/">Homes</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/acerca">Acerca de nosotros</a>
