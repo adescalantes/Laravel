@@ -7,7 +7,7 @@
     <nav>
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/">Homes</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/acerca">Acerca de nosotros</a>
@@ -22,7 +22,7 @@
             <input type="text" name="message" class="form-control" placeholder="Qué estás pensando?">
             @if($errors->has('message'))
                 @foreach($errors->get('message') as $error)
-                    <div class="form-control-feedback">{{ $error }}</div>   
+                    <div class="form-control-feedback">{{ $error }}</div>
                 @endforeach
             @endif
         </div>
@@ -37,7 +37,7 @@
             <a href="/messages/{{ $message->id }}">Leer más</a>
             </p>
         </div>
-    @empty 
+    @empty
         <p>No hay mensajes destacados.</p>
     @endforelse
     @if (count($messages))
@@ -47,4 +47,3 @@
     @endif
 </div>
 @endsection
-
