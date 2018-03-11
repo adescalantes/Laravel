@@ -9,7 +9,7 @@ class PagesController extends Controller
 {
     //
     public function home(){
-        $messages = Messages::paginate(10);
+        $messages = Messages::where('id','<','50')->paginate(10);
 
         return view('welcome', ['messages' => $messages,]);
     }
